@@ -5,9 +5,6 @@ const upfrompc = document.querySelector('#fileup');
 const show = document.querySelector('.container');
 
 
-
-
-
 //-----img collect from link--------
 
 function srcCollect(e) {
@@ -28,10 +25,7 @@ function getMeta(url) {
             <img src="${img.src}" alt="uploaded img" width="${this.width}" height="${this.height}">
             <button id="btn">Delete</button>
             </div>`;
-
     }
-    
-    
 };
 linkup.addEventListener('click', srcCollect);
 
@@ -65,8 +59,6 @@ let dltItem = document.querySelector('.container .btn');
         p.remove();
      }
     
-   
-
 });
 
 
