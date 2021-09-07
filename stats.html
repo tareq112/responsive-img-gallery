@@ -23,14 +23,21 @@
 </body>
 <script>
     const canvasElement = document.getElementById('statsChart');
+    const months = [
+                "Jan", "Feb", 
+                "Mar", "Apr", "May", 
+                "Jun", "Jul", "Aug",
+                "Sep", "Oct", 
+                "Nov", "Dec"];
+    const yr = [" 21"];
     const d = new Date();
-    let dat1 =(d.getDate() +"-"+ d.getMonth() +"-"+ d.getFullYear());
-    let dat2 =(d.getDate() - 1 +"-"+ d.getMonth() +"-"+ d.getFullYear());
-    let dat3 =(d.getDate() - 2+"-"+ d.getMonth() +"-"+ d.getFullYear());
-    let dat4 =(d.getDate() - 3 +"-"+ d.getMonth() +"-"+ d.getFullYear());
-    let dat5 =(d.getDate() - 4 +"-"+ d.getMonth() +"-"+ d.getFullYear());
-    let dat6 =(d.getDate() - 5 +"-"+ d.getMonth() +"-"+ d.getFullYear());
-    let dat7 =(d.getDate() - 6 +"-"+ d.getMonth() +"-"+ d.getFullYear());
+    let dat1 =(d.getDate()     +" "+ months[d.getMonth()]+" "+  d.getFullYear());
+    let dat2 =(d.getDate() - 1 +" "+ months[d.getMonth()] +" "+ d.getFullYear());
+    let dat3 =(d.getDate() - 2 +" "+ months[d.getMonth()] +" "+ d.getFullYear());
+    let dat4 =(d.getDate() - 3 +" "+ months[d.getMonth()] +" "+ d.getFullYear());
+    let dat5 =(d.getDate() - 4 +" "+ months[d.getMonth()] +" "+ d.getFullYear());
+    let dat6 =(d.getDate() - 5 +" "+ months[d.getMonth()] +" "+ d.getFullYear());
+    let dat7 =(d.getDate() - 6 +" "+ months[d.getMonth()] +" "+ d.getFullYear());
     console.log(dat1);
     
 
@@ -51,7 +58,7 @@
                     'rgba(255, 206, 86, 1)',
                     'rgba(75, 192, 192, 1)']
             }],
-        labels: [`${dat1}`, `${dat2}`, `${dat3}`, `${dat4}`, `${dat5}`, `${dat6}`, `${dat7}`]
+        labels: [ `${dat7}` ,`${dat6}` , `${dat5}`, `${dat4}`, `${dat3}`, `${dat2}`, `${dat1}`]
         }
     };
     const statChart = new Chart(canvasElement, config);
