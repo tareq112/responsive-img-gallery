@@ -31,13 +31,13 @@
                 "Nov", "Dec"];
     const yr = [" 21"];
     const d = new Date();
-    let dat1 =(d.getDate()     +" "+ months[d.getMonth()]+" "+  d.getFullYear());
-    let dat2 =(d.getDate() - 1 +" "+ months[d.getMonth()] +" "+ d.getFullYear());
-    let dat3 =(d.getDate() - 2 +" "+ months[d.getMonth()] +" "+ d.getFullYear());
-    let dat4 =(d.getDate() - 3 +" "+ months[d.getMonth()] +" "+ d.getFullYear());
-    let dat5 =(d.getDate() - 4 +" "+ months[d.getMonth()] +" "+ d.getFullYear());
-    let dat6 =(d.getDate() - 5 +" "+ months[d.getMonth()] +" "+ d.getFullYear());
-    let dat7 =(d.getDate() - 6 +" "+ months[d.getMonth()] +" "+ d.getFullYear());
+    let dat1 =(d.getDate()     +" "+ months[d.getMonth()]+"'"+ d.getFullYear().toString().substr(-2));
+    let dat2 =(d.getDate() - 1 +" "+ months[d.getMonth()] +"'"+ d.getFullYear().toString().substr(-2));
+    let dat3 =(d.getDate() - 2 +" "+ months[d.getMonth()] +"'"+ d.getFullYear().toString().substr(-2));
+    let dat4 =(d.getDate() - 3 +" "+ months[d.getMonth()] +"'"+ d.getFullYear().toString().substr(-2));
+    let dat5 =(d.getDate() - 4 +" "+ months[d.getMonth()] +"'"+ d.getFullYear().toString().substr(-2));
+    let dat6 =(d.getDate() - 5 +" "+ months[d.getMonth()] +"'"+ d.getFullYear().toString().substr(-2));
+    let dat7 =(d.getDate() - 6 +" "+ months[d.getMonth()] +"'"+ d.getFullYear().toString().substr(-2));
     console.log(dat1);
     
 
