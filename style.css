@@ -117,23 +117,23 @@ img:hover{
 
 /*--------------stats css------*/
 .statsmain{
-    max-width: 550px;
+    max-width: 750px;
     height: 550px;
     margin: 50px auto;
-    background: rgb(209, 202, 181);
-    box-shadow: 10px 10px 0 rgb(117, 115, 108);
+    background: rgb(231, 182, 34);
+    box-shadow: 10px 10px 0 rgb(235, 217, 155);
     border-radius: 10px;
     
 }
 .stats{
     display: flex;
     flex: 1;
-    height: 350px;
+    height: 515px;
     border-bottom: 1px solid rgb(138, 190, 104);
-    background: rgb(139, 135, 122);
+    background: rgb(231, 229, 221);
     margin-left: 50px;
-    border-left: 3px solid salmon;
-    border-bottom:3px solid salmon ;
+    
+    
 }
 
 

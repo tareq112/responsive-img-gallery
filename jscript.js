@@ -61,6 +61,9 @@ let dltItem = document.querySelector('.container .btn');
     
 });
 
+/*----------stats page---------*/
+
+
 
 
 
